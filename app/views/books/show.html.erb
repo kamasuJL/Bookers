@@ -1,8 +1,14 @@
-<h5>Title</h5>
-<p><%= @book.title %></p>
+<div class=show-view>
+  <h5>Title:</h5>
+  <h5><%= @book.title %></h5>
+</div>
 
-<h2>Body</h2>
-<p><%= @book.body %></p>
+<div class=show-view-2>
+  <h5>Body:</h5>
+  <h5><%= @book.body %></h5>
+</div>
 
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back", "/books" %>
+<div class=show-view-button>
+  <span class=Edit-button><%= link_to "Edit", edit_book_path(@book.id),class: "link" %></span>
+  <span class=Back-button><%= link_to "Back", "/books" %></span>
+</div>
